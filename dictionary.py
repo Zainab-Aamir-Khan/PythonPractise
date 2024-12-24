@@ -19,5 +19,11 @@ myDic.update({"name" : "safa"})
 print(myDic)
 print(myDic.get("age"))
 
+#dictionary constructor
+dictCon = dict (name = "sana", age = 21 , degree = "CS", isAdult = True)
+print(dictCon)
+print(type(dictCon))
+
+
 
 
