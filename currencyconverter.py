@@ -4,6 +4,7 @@ def myFac(curOfUsd):
     
 myFac(250)
 myFac(5000)
+myFac(1000)
 
 
 
