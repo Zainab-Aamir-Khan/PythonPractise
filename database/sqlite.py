@@ -16,4 +16,4 @@ emp_2 = Employee('jane','Doe',70000)
 
 print(emp_1.first)
 print(emp_1.last )
-print(emp_1.first)
+print(emp_1.pay)
