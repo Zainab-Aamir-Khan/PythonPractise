@@ -4,4 +4,8 @@ conn = sqlite3.connet('employee.db')
 
 c = conn.cursor()
 
-c.execute("""CREATE TABLE employees""")
+c.execute("""CREATE TABLE employees(
+        first name 
+        last name
+        pay
+        )""")
