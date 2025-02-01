@@ -10,14 +10,14 @@ c = conn.cursor()
 #         pay INTEGER
 #         )""")
 
-# c.execute("INSERT INTO employees VALUES ('Corey', 'Schafer', 50000)")
+c.execute("INSERT INTO employees VALUES ('Corey', 'Schafer', 50000)")
+
+conn.commit()
+
 
 c.execute("SELECT * FROM employees WHERE last_name= 'Schafer'")
 
-# c.fetchmany(5)
 print(c.fetchone())
-# c.fetchall()
 
-conn.commit()
 
 conn.close()
