@@ -10,7 +10,7 @@ c = conn.cursor()
 #         pay
 #         )""")
 
-c.execute("SELECT * FROM employees WHERE last= 'Neena'")
+c.execute("SELECT * FROM employees WHERE last= 'schafer'")
 
 conn.commit()
 
