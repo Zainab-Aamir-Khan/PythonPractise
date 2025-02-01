@@ -1,22 +1,22 @@
-# import sqlite3
+import sqlite3
 
-# conn = sqlite3.connect('employee.db')
+conn = sqlite3.connect('employee.db')
 
-# c = conn.cursor()
+c = conn.cursor()
 
-# # c.execute("""CREATE TABLE employees(
-# #         first_name TEXT, 
-# #         last_name TEXT,
-# #         pay INTEGER
-# #         )""")
+# c.execute("""CREATE TABLE IF NOT EXITS employees(
+#         first_name TEXT, 
+#         last_name TEXT,
+#         pay INTEGER
+#         )""")
 
-# c.execute("INSERT INTO employees  (first_name, last_name, pay) VALUES ('Corey', 'Schafer', 50000)")
+c.execute("INSERT INTO employees  (first_name, last_name, pay) VALUES ('Corey', 'Schafer', 50000)")
 
 
-# c.execute("SELECT * FROM employees WHERE last_name= 'Schafer'")
+c.execute("SELECT * FROM employees WHERE last_name= 'Schafer'")
 
-# print(c.fetchall())
+print(c.fetchall())
 
-# conn.commit()
+conn.commit()
 
-# conn.close()
+conn.close()
