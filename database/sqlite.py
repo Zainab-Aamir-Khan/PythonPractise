@@ -1,4 +1,5 @@
 import sqlite3
+from employee import Employee
 
 conn = sqlite3.connect('employee.db')
 
@@ -21,3 +22,4 @@ print(c.fetchall())
 conn.commit()
 
 conn.close()
+ 
