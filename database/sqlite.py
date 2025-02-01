@@ -11,15 +11,9 @@ c = conn.cursor()
 #         pay INTEGER
 #         )""")
 
-# c.execute("INSERT INTO employees VALUES ('Mary', 'Schafer', 70000)")
+emp_1 = Employee('john','Doe',80000)
+emp_2 = Employee('jane','Doe',70000)
 
-# conn.commit()
-
-c.execute("SELECT * FROM employees WHERE last_name= 'Schafer'")
-
-print(c.fetchall())
-
-conn.commit()
-
-conn.close()
- 
+print(emp_1.first)
+print(emp_1.last )
+print(emp_1.first)
