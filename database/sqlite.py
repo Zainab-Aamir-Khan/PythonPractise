@@ -5,14 +5,14 @@ conn = sqlite3.connect('employee.db')
 c = conn.cursor()
 
 # c.execute("""CREATE TABLE employees(
-#         first name, 
-#         last name,
-#         pay
+#         first_name TEXT, 
+#         last_name TEXT,
+#         pay INTEGER
 #         )""")
 
 # c.execute("INSERT INTO employees VALUES ('Corey', 'Schafer', 50000)")
 
-c.execute("SELECT * FROM employees WHERE last= 'Schafer'")
+c.execute("SELECT * FROM employees WHERE last_name= 'Schafer'")
 
 # c.fetchmany(5)
 print(c.fetchone())
