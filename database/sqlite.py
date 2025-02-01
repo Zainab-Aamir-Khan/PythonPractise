@@ -10,8 +10,9 @@ c = conn.cursor()
 #         pay INTEGER
 #         )""")
 
-c.execute("INSERT INTO employees  (first_name, last_name, pay) VALUES ('Corey', 'Schafer', 50000)")
+c.execute("INSERT INTO employees VALUES ('Mary', 'Schafer', 70000)")
 
+conn.commit()
 
 c.execute("SELECT * FROM employees WHERE last_name= 'Schafer'")
 
