@@ -10,7 +10,7 @@ c = conn.cursor()
 #         pay
 #         )""")
 
-# c.execute(INSERT INTO employees VALUES ("Corey", "Schafer", 50000))
+# c.execute("INSERT INTO employees VALUES ('Corey', 'Schafer', 50000)")
 
 c.execute("SELECT * FROM employees WHERE last= 'Schafer'")
 
