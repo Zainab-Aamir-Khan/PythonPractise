@@ -10,9 +10,9 @@ c = conn.cursor()
 #         pay
 #         )""")
 
-# c.execute(INSERT INTO employees VALUES ("Zainab", "Amir", 50000))
+# c.execute(INSERT INTO employees VALUES ("Corey", "Schafer", 50000))
 
-c.execute("SELECT * FROM employees WHERE last= 'Schafer'")
+c.execute("SELECT * FROM employees WHERE last= 'Amir'")
 
 # c.fetchmany(5)
 print(c.fetchone())
