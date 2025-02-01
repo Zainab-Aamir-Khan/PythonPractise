@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connet('employee.db')
+conn = sqlite3.connect('employee.db')
 
 c = conn.cursor()
 
@@ -9,3 +9,7 @@ c.execute("""CREATE TABLE employees(
         last name
         pay
         )""")
+
+conn.commit()
+
+conn.close()
